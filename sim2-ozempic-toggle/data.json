@@ -1,0 +1,23 @@
+{
+  "meta": {
+    "title": "Ozempic Reality Check",
+    "disclaimer": "Illustrative simulation for education. Not a clinical diagnostic tool."
+  },
+  "simulation": {
+    "baseline": {
+      "weight": 82,
+      "fatMass": 36,
+      "muscleMass": 26
+    },
+    "withoutProtection": {
+      "fatShare": 65,
+      "muscleShare": 30,
+      "otherShare": 5
+    },
+    "withProtection": {
+      "fatShare": 90,
+      "muscleShare": 8,
+      "otherShare": 2
+    }
+  }
+}
