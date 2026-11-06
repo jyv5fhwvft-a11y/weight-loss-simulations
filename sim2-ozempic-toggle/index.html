@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ozempic Reality Check — Muscle Preservation Toggle</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="hero">
+    <h1>The Ozempic Reality Check</h1>
+    <p class="subtitle">
+      The injection lowers the weight. <strong>What you lose</strong> depends on what you do alongside it.
+    </p>
+  </header>
+
+  <main>
+    <section class="stage">
+      <div class="figure-wrap">
+        <svg id="figure" viewBox="0 0 240 360" role="img" aria-label="Body composition figure"></svg>
+      </div>
+
+      <div class="panel">
+        <div class="toggle-row">
+          <label class="switch">
+            <input type="checkbox" id="protectToggle" />
+            <span class="slider"></span>
+          </label>
+          <span class="toggle-label" id="toggleLabel">Add protein + resistance training</span>
+        </div>
+
+        <div class="slider-row">
+          <label for="lossSlider">Weight loss on injection</label>
+          <input type="range" id="lossSlider" min="0" max="20" step="1" value="0" />
+          <span class="loss-val" id="lossVal">0%</span>
+        </div>
+
+        <div class="meters">
+          <div class="meter-row">
+            <span>Total weight</span>
+            <div class="meter-track"><div class="meter-fill weight" id="mWeight"></div></div>
+            <span class="meter-val" id="vWeight">—</span>
+          </div>
+          <div class="meter-row">
+            <span>Fat mass</span>
+            <div class="meter-track"><div class="meter-fill fat" id="mFat"></div></div>
+            <span class="meter-val" id="vFat">—</span>
+          </div>
+          <div class="meter-row">
+            <span>Muscle mass</span>
+            <div class="meter-track"><div class="meter-fill muscle" id="mMuscle"></div></div>
+            <span class="meter-val" id="vMuscle">—</span>
+          </div>
+        </div>
+
+        <div class="verdict" id="verdict">Move the slider to begin.</div>
+      </div>
+    </section>
+
+    <p class="hint">
+      Toggle <em>protein + resistance training</em> on, then drag the slider to the same weight-loss value.
+      Compare what happens to muscle.
+    </p>
+  </main>
+
+  <footer class="foot">
+    <span>Illustrative simulation — not a clinical diagnostic tool.</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
