@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weight Loss Simulations — Demos</title>
+  <style>
+    :root {
+      --bg: #0f1220;
+      --text: #eef1f8;
+      --muted: #9aa3bd;
+      --accent: #7c5cff;
+      --accent-2: #4e8cff;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+      background: radial-gradient(1200px 600px at 50% -10%, #1b2140, var(--bg));
+      color: var(--text);
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+    }
+    .wrap {
+      text-align: center;
+      padding: 2.5rem 1.5rem;
+      max-width: 760px;
+    }
+    h1 {
+      margin: 0 0 .5rem;
+      font-size: clamp(1.7rem, 4vw, 2.8rem);
+      letter-spacing: -0.02em;
+    }
+    .sub {
+      color: var(--muted);
+      font-size: 1.05rem;
+      line-height: 1.5;
+      margin: 0 auto 2rem;
+      max-width: 560px;
+    }
+    .links {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .card {
+      display: block;
+      text-decoration: none;
+      color: var(--text);
+      background: linear-gradient(180deg, #1a1f33, #232a44);
+      border: 1px solid #2c3454;
+      border-radius: 18px;
+      padding: 1.4rem 1.6rem;
+      width: 260px;
+      text-align: left;
+      transition: transform .18s ease, border-color .18s ease, box-shadow .18s ease;
+    }
+    .card:hover {
+      transform: translateY(-4px);
+      border-color: var(--accent);
+      box-shadow: 0 14px 34px rgba(124, 92, 255, .22);
+    }
+    .card .num {
+      font-size: .78rem;
+      font-weight: 700;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: .4rem;
+    }
+    .card .title {
+      font-size: 1.1rem;
+      font-weight: 700;
+      margin-bottom: .35rem;
+    }
+    .card .desc {
+      font-size: .86rem;
+      color: var(--muted);
+      line-height: 1.45;
+    }
+    .foot {
+      margin-top: 2.4rem;
+      color: #5f688a;
+      font-size: .78rem;
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <h1>Weight Loss Simulations</h1>
+    <p class="sub">
+      Two interactive demos on body composition, BMI, and GLP-1 weight loss
+      in midlife women. Open either one, or run them in order.
+    </p>
+
+    <div class="links">
+      <a class="card" href="./sim1-bmi-reveal/">
+        <div class="num">Simulation 1</div>
+        <div class="title">Same Scale, Different Body</div>
+        <div class="desc">
+          Three women, three BMIs. Reveal what the scale can't show —
+          muscle vs. visceral fat.
+        </div>
+      </a>
+
+      <a class="card" href="./sim2-ozempic-toggle/">
+        <div class="num">Simulation 2</div>
+        <div class="title">Ozempic Reality Check</div>
+        <div class="desc">
+          Toggle protein + resistance training and see what the injection
+          actually takes off — fat or muscle.
+        </div>
+      </a>
+    </div>
+
+    <p class="foot">Illustrative simulations for education only — not clinical diagnostic tools.</p>
+  </main>
+</body>
+</html>
