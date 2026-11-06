@@ -1,0 +1,56 @@
+{
+  "meta": {
+    "title": "Same Scale, Different Body",
+    "disclaimer": "Illustrative simulation for education. Not a clinical diagnostic tool."
+  },
+  "women": [
+    {
+      "id": "w1",
+      "name": "Woman A",
+      "bmi": 21,
+      "shortCaption": "Low BMI, but look inside.",
+      "composition": {
+        "muscle": 22,
+        "visceralFat": 78,
+        "subcutaneousFat": 30
+      },
+      "risk": {
+        "level": "high",
+        "label": "High — hidden visceral fat, low muscle"
+      },
+      "note": "This is the 'skinny fat' pattern. After menopause, falling estrogen can push fat into the abdomen and away from the hips even when scale weight barely moves. Visceral fat is metabolically active and inflammatory; low muscle reduces glucose disposal. A low BMI can mask real cardiometabolic risk."
+    },
+    {
+      "id": "w2",
+      "name": "Woman B",
+      "bmi": 24,
+      "shortCaption": "Higher BMI, stronger inside.",
+      "composition": {
+        "muscle": 76,
+        "visceralFat": 18,
+        "subcutaneousFat": 52
+      },
+      "risk": {
+        "level": "low",
+        "label": "Low — protective muscle, little visceral fat"
+      },
+      "note": "Higher BMI does not automatically mean higher risk. Muscle supports glucose metabolism, bone density, and balance — all especially important as women age. With low visceral fat and strong muscle, this profile can be metabolically healthier than a lower-BMI, low-muscle body."
+    },
+    {
+      "id": "w3",
+      "name": "Woman C",
+      "bmi": 30,
+      "shortCaption": "Balanced ratio, larger frame.",
+      "composition": {
+        "muscle": 50,
+        "visceralFat": 50,
+        "subcutaneousFat": 64
+      },
+      "risk": {
+        "level": "moderate",
+        "label": "Moderate — mixed composition"
+      },
+      "note": "Equal muscle and visceral fat with more subcutaneous fat. Subcutaneous fat is generally less harmful than visceral fat, but the balance here means risk is real and modifiable. The target is not simply a lower number — it is shifting the ratio toward muscle and away from visceral fat."
+    }
+  ]
+}
