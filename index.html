@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Same Scale, Different Body — BMI Reveal</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="hero">
+    <h1>Same Scale. Different Body.</h1>
+    <p class="subtitle">
+      Three women. Three BMIs. The number on the scale doesn't tell you what's inside.
+    </p>
+  </header>
+
+  <main>
+    <section class="cards" id="cards" aria-live="polite"></section>
+
+    <div class="controls">
+      <button id="revealBtn" class="btn primary">Reveal Body Composition</button>
+      <button id="resetBtn" class="btn ghost" hidden>Reset</button>
+    </div>
+
+    <p class="hint" id="hint">Tap a woman after revealing to see her metabolic risk profile.</p>
+
+    <section class="modal" id="modal" hidden role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <div class="modal-card">
+        <button class="modal-close" id="modalClose" aria-label="Close">&times;</button>
+        <h2 id="modalTitle"></h2>
+        <p id="modalBmi" class="modal-bmi"></p>
+        <div class="meters" id="modalMeters"></div>
+        <p id="modalNote" class="modal-note"></p>
+        <div class="risk" id="modalRisk"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <span>Illustrative simulation — not a clinical diagnostic tool.</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
